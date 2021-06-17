@@ -1,0 +1,53 @@
+VOL=000901  OWNER=HERCULES       TAPE ANALYSIS PROGRAM   (T A P E M A P)  V2.1          WEDNESDAY  NOV 08, 1976  (76.313)  15:46:19
+PARM='TEST'
+------------------------------------------------------------------------------------------------------------------------------------
+RELOAD   FILE                     PSWD                   INFO                 BLOCK   BLOCK            LNTH  TOTL  CREATOR
+FORMAT   SEQ#  DATASET NAME       REQD  C-DATE  E-DATE  SOURCE  RECFM  LRECL   SIZE   COUNT  DEN  TRT  (FT)  LNTH  JOBNAME/STEPNAME
+------------------------------------------------------------------------------------------------------------------------------------
+            1  COBOL.LOAD               76.313  00.000  LABELS  VS     13046  13050      44  6250                  SYSREPRO/REPR001
+IEBCOPY     2                                            SCAN   V             13023      44  800         44    44
+
+            2  COBOL.LIB                76.313  00.000  LABELS  VS     13046  13050      47  6250                  SYSREPRO/REPR002
+IEBCOPY     5                                            SCAN   V              3608      47  800          7    50
+
+            3  COBOL.PROCS              76.313  00.000  LABELS  FB        80   6400       2  6250                  SYSREPRO/REPR003
+IEBUPDTE    8                                            SCAN   F              5840       2  800          2    52
+
+     *** EOV ***
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+COBOL.LOAD        (FILE 0001) WAS UNLOADED BY IEBCOPY...  WAS:  DSORG=PO   LRECL=0       RECFM=U       BLKSIZE=13030   UNIT=3330
+
+               FOLLOWING MEMBERS UNLOADED:
+
+               IKFCBL00  IKFCBL01  IKFCBL1B  IKFCBL10  IKFCBL20  IKFCBL30  IKFCBL40  IKFCBL50  IKFCBL51  IKFCBL6A
+               IKFCBL60  IKFCBL70
+
+************************************************************************************************************************************
+
+COBOL.LIB         (FILE 0002) WAS UNLOADED BY IEBCOPY...  WAS:  DSORG=PO   LRECL=0       RECFM=U       BLKSIZE=13030   UNIT=3330
+
+               FOLLOWING MEMBERS UNLOADED:
+
+               ILBOACP0  ILBOANE0  ILBOANF0  ILBOATB0  ILBOBID0  ILBOBID1  ILBOBID2  ILBOBIE0  ILBOBIE1  ILBOBIE2
+               ILBOBII0  ILBOBII1  ILBOBII2  ILBOCKP0  ILBOCLS0  ILBODCI0  ILBODCI1  ILBODSP0  ILBODTE0  ILBODTE1
+               ILBOEFL0  ILBOEFL1  ILBOEFL2  ILBOERR0  ILBOERR1  ILBOERR2  ILBOERR3  ILBOERR4  ILBOERR5  ILBOERR6
+               ILBOETB0  ILBOFPW0  ILBOGPW0  ILBOIDB0  ILBOIDB1  ILBOIDR0  ILBOIDT0  ILBOIFB0  ILBOIFB1  ILBOIFB2
+               ILBOIFD0  ILBOIFD1  ILBOITB0  ILBOIVL0  ILBOMVL0  ILBOPTV0  ILBOPTV1  ILBOPTV2  ILBOSAMR  ILBOSAM0
+               ILBOSCH0  ILBOSGM0  ILBOSGM1  ILBOSGM2  ILBOSPA0  ILBOSRT0  ILBOSTI0  ILBOSTP0  ILBOSTP1  ILBOTEF0
+               ILBOTEF1  ILBOTEF2  ILBOTEF3  ILBOTRN0  ILBOUTB0  ILBOVCO0  ILBOVMO0  ILBOVMO1  ILBOVTR0  ILBOWTB0
+               ILBOXDI0  ILBOXMU0  ILBOXPR0
+
+************************************************************************************************************************************
+
+COBOL.PROCS       (FILE 0003) IS AN IEBUPDTE INPUT STREAM:   A-ADD   C-CHANGE   R-REPLACE   > = SUBORDINATE NAME
+
+               FOLLOWING MEMBERS UNLOADED:
+
+               A-COBUC    A-COBUCG   A-COBUCL   A-COBUCLG  A-COBULG
+
+************************************************************************************************************************************
+
+     *** EOV ***
+

@@ -1,0 +1,7 @@
+# COBOL Install
+/$CA
+$HASP000 OK;sh ./submit.sh ../SOFTWARE/COBOL/01_recv_mvtcobol.jcl
+/*IEF233A M 100,000901,,COBOLREC,RELOAD;devinit 100 ../SOFTWARE/COBOL/cobol.het
+/*02 IEC301A S JOB INIT     DSNAME SYS1.VSAM.MASTER.CATALOG ;/r 02,sysprog
+/ $HASP395 COBOLREC ENDED;sh ./submit.sh ../SOFTWARE/COBOL/02_cobtest.jcl
+# Install complete
